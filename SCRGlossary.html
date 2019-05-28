@@ -380,12 +380,13 @@ $(document).ready(function () {
 
 <div id="glossary-of-the-most-common-used-terms-in-spatial-capture-recapture-scr-models" class="section level3">
 <h3>Glossary of the most common used terms in Spatial Capture Recapture (SCR) models</h3>
-<div id="i-include-in-the-context-in-which-the-term-is-most-used.-if-a-term-has-a-synonym-i-include-it-at-the-end-of-the-definition-using-syn." class="section level5">
-<h5>I include in [*] the context in which the term is most used. If a term has a synonym I include it at the end of the definition using <em>Syn.</em></h5>
+<div id="i-include-for-the-context-in-which-the-term-is-most-used.-if-a-term-has-a-synonym-i-include-it-at-the-end-of-the-definition-using-syn." class="section level5">
+<h5>I include [*] for the context in which the term is most used. If a term has a synonym I include it at the end of the definition using <em>Syn.</em></h5>
 <ol style="list-style-type: decimal">
 <li><p><strong>Abundance [Ecology]:</strong> total number of individuals in an area at a given time.</p></li>
 <li><p><strong>Abundance [SCR]:</strong> total number of activity centers in an area at a given time.</p></li>
 <li><p><strong>Activity center:</strong> is the centroid of the space that an individual occupies or uses during the period in which traps are active. Syn. Home range center.</p></li>
+<li><p><strong>Camera trap array:</strong> a set of camera traps organized in a predetermined spatial pattern and location in a study area. A study may include multiple arrays sampled sequentially in a study season.</p></li>
 <li><p><strong>Connectivity:</strong> The degree to which the landscape facilitates or impedes movement among locations.</p></li>
 <li><p><strong>Density [in ecology]:</strong> number of individuals per area at a given time.</p></li>
 <li><p><strong>Density [in SCR]:</strong> number of activity centers per area at a given time.</p></li>
@@ -393,18 +394,20 @@ $(document).ready(function () {
 <li><p><strong>Ecological distance:</strong> the least cost path between two points estimated from encounter history data.</p></li>
 <li><p><strong>Encounter probability:</strong> used mostly in occupancy context. Syn. detection probability.</p></li>
 <li><p><strong>Euclidean distance:</strong> the straight-line distance between two points.</p></li>
+<li><p><em>habitat mask:</em> this mask is used in SCR models to define the outer limit of the state space because animals could occupy the area beyond the mask but the probability of detecting them outside the mask should be small. It also encircles the sites near the detector array that have the potential to be occupied (habitat) from the non-occupied sites.</p></li>
 <li><p><strong>Home range:</strong> defined in SCR as the area used by an organism during some time period.</p></li>
 <li><p><strong>Homogeneous point process (HPP):</strong> a spatial point process that has a constant intensity parameter. In SCR the constant intensity parameter is expected density.</p></li>
 <li><p><strong>Individual encounters:</strong> capture or encounter of one individual using a trap or detector. One of the assumptions of SCR models. To build an SCR model individual encounters within and among traps must be independent.</p></li>
 <li><p><strong>Inhomogeneous point process (IPP):</strong> a spatial point process for which the intensity parameter is location specific (spatially varying). The intensity parameter is density.</p></li>
 <li><p><strong>Latent variable:</strong> a variable not directly observed, but inferred from data. E.g., activity center.</p></li>
-<li><p><strong>Occasion:</strong> a unique and independent time period. It could be one night or several nights pooled together.</p></li>
+<li><p><strong>Occasion (k):</strong> a unique and independent temporal interval composed of repeated detection of individuals across sites. It could be one night or several nights pooled together. Marices are built by parting the overall survey effort in occasions (temporal intervals) which are usually the columns. Syn. sampling occasion.</p></li>
 <li><p><strong>Occupancy:</strong> the proportion of sites occupied by a target species. Occupy means that at least one individual is present at the site.</p></li>
 <li><p><strong>Session:</strong> a stratum defining meaningful grouping for purposes of data collection. Usually a session is defined by a site, a year, or a combination of both.</p></li>
-<li><p><strong>Site:</strong></p></li>
 <li><p><strong>Spatial capture recapture (SCR):</strong> a hierarchical capture-recapture (CR) model. An extension of CR to make use of encounter location data to study spatial aspects of animal populations. These models can be used for spatial models of density, resource selection, transience/dispersal. SCR models describe the probability of encounter in a trap, conditional on where an individual (i) lives (Si). The biological process in SCR models is how individual sare distributed in space. Ecologists can use SCR models to address questions regarding: 1) spatial patterns in density, 2) resource selection or space usage, 3) dispersal, transience, and 4) landscape/connectivity. SCR models are basically a unified framework to draw inferences about density and spatial population processes.</p></li>
 <li><p><strong>Spatial encounter history [SCR] (yijk):</strong> the spatially explicity observation data matrix representing which individual (i) was encountered when (k) and where (j). Yijk = individual i was detected (y=1) or not (y=0) at trap j in sampling occasion k.</p></li>
 <li><p><strong>State space (S):</strong> an area containing all plausible activity centers of individuals observed during a study. It could be a discrete or continuous area containing all plausible activity centers of the detected individuals. Syn. Area of integration.</p></li>
+<li><p><strong>State variable:</strong> the parameter or parameters of a population being studied. E.g., a state variable could be abundance, or a proxy of it, occupancy.</p></li>
+<li><p><strong>survey effort:</strong> total number of days (or nights) independent traps (vs. paired traps) worked during a survey. Syn. sampling effort.</p></li>
 <li><p><strong>Trap:</strong> the spatial unit at which individuals are observed. The location of an observation si the centroid of the pixel within which the observation was made. Syn. locator.</p></li>
 </ol>
 </div>

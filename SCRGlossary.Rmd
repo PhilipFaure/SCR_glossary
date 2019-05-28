@@ -7,7 +7,6 @@ nocite: |
 ...
 
 
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -22,10 +21,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 1. **Activity center:** is the centroid of the space that an individual occupies or uses during the period in which traps are active. Syn. Home range center.
 
+1. **Camera trap array:** a set of camera traps organized in a predetermined spatial pattern and location in a study area. A study may include multiple arrays sampled sequentially in a study season. 
+
 1. **Connectivity:** The degree to which the landscape facilitates or impedes movement among locations. 
 
-1. **Density [in ecology]:** number of individuals per area at a given time. 
+1. **Data augmentation (DA):** it is a reparametrization of the "complete data" model. Basically, the DA is embedded into a larger data set ending with M _rows_ > N _rows_ (rows = individuals). The model is re-expressed conditional on M instead of N (which can be unknown). Through a Bernoulli sampling process we can determine if an individual of M is also a member of N. Used in SCR models with unknown population size (N) under a Bayesian framework. 
 
+1. **Density [in ecology]:** number of individuals per area at a given time. 
 1. **Density [in SCR]:** number of activity centers per area at a given time. 
 
 1. **Detection probability:** used mostly in SCR context. Animals can encounter a trap, but most study designs cannnot disentagle visitation from detection. It usually depends on the context the research is being taking place because you cannot say capture probability if you are using camera traps, hair snares, or scats because you are technically not capturing individuals. Syn. encounter probability, capture probability. 
@@ -35,6 +37,8 @@ knitr::opts_chunk$set(echo = TRUE)
 1. **Encounter probability:** used mostly in occupancy context. Syn. detection probability. 
 
 1. **Euclidean distance:** the straight-line distance between two points. 
+
+1. *habitat mask:* this mask is used in SCR models to define the outer limit of the state space because animals could occupy the area beyond the mask but the probability of detecting them outside the mask should be small. It also encircles the sites near the detector array that have the potential to be occupied (habitat) from the non-occupied sites. 
 
 1. **Home range:** defined in SCR as the area used by an organism during some time period.
 
@@ -46,19 +50,21 @@ knitr::opts_chunk$set(echo = TRUE)
 
 1. **Latent variable:** a variable not directly observed, but inferred from data. E.g., activity center. 
 
-1. **Occasion:** a unique and independent time period. It could be one night or several nights pooled together. 
+1. **Occasion (k):** a unique and independent temporal interval composed of repeated detection of individuals across sites. It could be one night or several nights pooled together. Marices are built by parting the overall survey effort in occasions (temporal intervals) which are usually the columns. Syn. sampling occasion. 
 
 1. **Occupancy:** the proportion of sites occupied by a target species. Occupy means that at least one individual is present at the site. 
 
 1. **Session:** a stratum defining meaningful grouping for purposes of data collection. Usually a session is defined by a site, a year, or a combination of both. 
-
-1. **Site:** 
 
 1. **Spatial capture recapture (SCR):** a hierarchical capture-recapture (CR) model. An extension  of CR to make use of encounter location data to study spatial aspects of animal populations. These models can be used for spatial models of density, resource selection, transience/dispersal. SCR models describe the probability of encounter in a trap, conditional on where an individual (i) lives (Si). The biological process in SCR models is how individual sare distributed in space. Ecologists can use SCR models to address questions regarding: 1) spatial patterns in density, 2) resource selection or space usage, 3) dispersal, transience, and 4) landscape/connectivity. SCR models are basically a unified framework to draw inferences about density and spatial population processes. 
 
 1. **Spatial encounter history [SCR] (yijk):** the spatially explicity observation data matrix representing which individual (i) was encountered when (k) and where (j). Yijk = individual i was detected (y=1) or not (y=0) at trap j in sampling occasion k. 
 
 1. **State space (S):** an area containing all plausible activity centers of individuals observed during a study. It could be a discrete or continuous area containing all plausible activity centers of the detected individuals. Syn. Area of integration. 
+
+1. **State variable:** the parameter or parameters of a population being studied. E.g., a state variable could be abundance, or a proxy of it, occupancy. 
+
+1. **survey effort:** total number of days (or nights) independent traps (vs. paired traps) worked during a survey. Syn. sampling effort. 
 
 1. **Trap:** the spatial unit at which individuals are observed. The location of an observation si the centroid of the pixel within which the observation was made. Syn. locator. 
 
