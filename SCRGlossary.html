@@ -378,10 +378,10 @@ $(document).ready(function () {
 </div>
 
 
-<div id="glossary-of-most-common-used-terms-in-spatial-capture-recapture-scr-models" class="section level3">
-<h3>Glossary of most common used terms in Spatial Capture Recapture (SCR) models</h3>
+<div id="glossary-of-the-most-common-used-terms-in-spatial-capture-recapture-scr-models" class="section level3">
+<h3>Glossary of the most common used terms in Spatial Capture Recapture (SCR) models</h3>
 <div id="i-include-in-the-context-in-which-the-term-is-most-used.-if-a-term-has-a-synonym-i-include-it-at-the-end-of-the-definition-using-syn." class="section level5">
-<h5>I include in [*] the context in which the term is most used. If a term has a synonym I include it at the end of the definition using Syn.</h5>
+<h5>I include in [*] the context in which the term is most used. If a term has a synonym I include it at the end of the definition using <em>Syn.</em></h5>
 <ol style="list-style-type: decimal">
 <li><p><strong>Abundance [Ecology]:</strong> total number of individuals in an area at a given time.</p></li>
 <li><p><strong>Abundance [SCR]:</strong> total number of activity centers in an area at a given time.</p></li>
@@ -389,15 +389,16 @@ $(document).ready(function () {
 <li><p><strong>Connectivity:</strong> The degree to which the landscape facilitates or impedes movement among locations.</p></li>
 <li><p><strong>Density [in ecology]:</strong> number of individuals per area at a given time.</p></li>
 <li><p><strong>Density [in SCR]:</strong> number of activity centers per area at a given time.</p></li>
-<li><p><strong>Detection probability:</strong> used mostly in SCR context. Syn. encounter probability.</p></li>
+<li><p><strong>Detection probability:</strong> used mostly in SCR context. Animals can encounter a trap, but most study designs cannnot disentagle visitation from detection. It usually depends on the context the research is being taking place because you cannot say capture probability if you are using camera traps, hair snares, or scats because you are technically not capturing individuals. Syn. encounter probability, capture probability.</p></li>
 <li><p><strong>Ecological distance:</strong> the least cost path between two points estimated from encounter history data.</p></li>
 <li><p><strong>Encounter probability:</strong> used mostly in occupancy context. Syn. detection probability.</p></li>
 <li><p><strong>Euclidean distance:</strong> the straight-line distance between two points.</p></li>
 <li><p><strong>Home range:</strong> defined in SCR as the area used by an organism during some time period.</p></li>
 <li><p><strong>Homogeneous point process (HPP):</strong> a spatial point process that has a constant intensity parameter. In SCR the constant intensity parameter is expected density.</p></li>
+<li><p><strong>Individual encounters:</strong> capture or encounter of one individual using a trap or detector. One of the assumptions of SCR models. To build an SCR model individual encounters within and among traps must be independent.</p></li>
 <li><p><strong>Inhomogeneous point process (IPP):</strong> a spatial point process for which the intensity parameter is location specific (spatially varying). The intensity parameter is density.</p></li>
 <li><p><strong>Latent variable:</strong> a variable not directly observed, but inferred from data. E.g., activity center.</p></li>
-<li><p><strong>Occasion:</strong> a unique and independent site survey.</p></li>
+<li><p><strong>Occasion:</strong> a unique and independent time period. It could be one night or several nights pooled together.</p></li>
 <li><p><strong>Occupancy:</strong> the proportion of sites occupied by a target species. Occupy means that at least one individual is present at the site.</p></li>
 <li><p><strong>Session:</strong> a stratum defining meaningful grouping for purposes of data collection. Usually a session is defined by a site, a year, or a combination of both.</p></li>
 <li><p><strong>Site:</strong></p></li>
@@ -408,9 +409,25 @@ $(document).ready(function () {
 </ol>
 </div>
 </div>
+<div id="symbols" class="section level3">
+<h3>Symbols</h3>
+<ol style="list-style-type: decimal">
+<li><p><em>d<sub>j</sub>:</em> distance between a trap and activity center. The activity centers are usually unobserved, therefore dj is usually a latent variable.</p></li>
+<li><p><em>s<sub>i</sub></em>: two dimensional spatial coordinate of the activity center for individual i.</p></li>
+<li><p><em>k:</em> occasions.</p></li>
+<li><p><em>i:</em> individuals.</p></li>
+<li><p><em>j:</em> traps or detectors.</p></li>
+<li><p><em>S:</em> state space.</p></li>
+<li><p><em>p<sub>ij</sub>:</em> encounter probability which depends on both individual and trap.</p></li>
+<li><p><em>s<sub>i</sub>:</em> a two-dimensional spatial coordinate which is the activity center of individual i.</p></li>
+</ol>
+</div>
 <div id="references" class="section level3 unnumbered">
 <h3>References</h3>
 <div id="refs" class="references">
+<div id="ref-rovero2016camera">
+<p>Rovero, Francesco, and Fridolin Zimmermann. 2016. <em>Camera Trapping for Wildlife Research</em>. Pelagic Publishing Ltd.</p>
+</div>
 <div id="ref-royle_spatial_2013">
 <p>Royle, J Andrew, Richard B Chandler, Rahel Sollmann, and Beth Gardner. 2013. <em>Spatial Capture-Recapture</em>. Academic Press.</p>
 </div>

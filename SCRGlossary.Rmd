@@ -3,7 +3,7 @@ author: "Gabriela Palomo"
 output: html_document
 bibliography: scrGlossary.bib
 nocite: | 
-  @royle_spatial_2013, @sutherland_NA
+  @royle_spatial_2013, @sutherland_NA, @rovero2016camera
 ...
 
 
@@ -12,9 +12,9 @@ nocite: |
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-### Glossary of most common used terms in Spatial Capture Recapture (SCR) models 
+### Glossary of the most common used terms in Spatial Capture Recapture (SCR) models 
 
-##### I include in [*] the context in which the term is most used. If a term has a synonym I include it at the end of the definition using Syn. 
+##### I include [*] for the context in which the term is most used. If a term has a synonym I include it at the end of the definition using _Syn._ 
 
 1. **Abundance [Ecology]:** total number of individuals in an area at a given time. 
 
@@ -28,7 +28,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 1. **Density [in SCR]:** number of activity centers per area at a given time. 
 
-1. **Detection probability:** used mostly in SCR context. Syn. encounter probability. 
+1. **Detection probability:** used mostly in SCR context. Animals can encounter a trap, but most study designs cannnot disentagle visitation from detection. It usually depends on the context the research is being taking place because you cannot say capture probability if you are using camera traps, hair snares, or scats because you are technically not capturing individuals. Syn. encounter probability, capture probability. 
 
 1. **Ecological distance:** the least cost path between two points estimated from encounter history data. 
 
@@ -40,11 +40,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 1. **Homogeneous point process (HPP):** a spatial point process that has a constant intensity parameter. In SCR the constant intensity parameter is expected density. 
 
+1. **Individual encounters:** capture or encounter of one individual using a trap or detector. One of the assumptions of SCR models. To build an SCR model individual encounters within and among traps must be independent. 
+
 1. **Inhomogeneous point process (IPP):** a spatial point process for which the intensity parameter is location specific (spatially varying). The intensity parameter is density. 
 
 1. **Latent variable:** a variable not directly observed, but inferred from data. E.g., activity center. 
 
-1. **Occasion:** a unique and independent site survey. 
+1. **Occasion:** a unique and independent time period. It could be one night or several nights pooled together. 
 
 1. **Occupancy:** the proportion of sites occupied by a target species. Occupy means that at least one individual is present at the site. 
 
@@ -59,6 +61,24 @@ knitr::opts_chunk$set(echo = TRUE)
 1. **State space (S):** an area containing all plausible activity centers of individuals observed during a study. It could be a discrete or continuous area containing all plausible activity centers of the detected individuals. Syn. Area of integration. 
 
 1. **Trap:** the spatial unit at which individuals are observed. The location of an observation si the centroid of the pixel within which the observation was made. Syn. locator. 
+
+### Symbols
+
+1. *d<sub>j</sub>:* distance between a trap and activity center. The activity centers are usually unobserved, therefore dj is usually a latent variable. 
+
+1. *s<sub>i</sub>*: two dimensional spatial coordinate of the activity center for individual i. 
+
+1. *k:* occasions. 
+
+1. *i:* individuals.
+
+1. *j:* traps or detectors. 
+
+1. *S:* state space. 
+
+1. *p<sub>ij</sub>:* encounter probability which depends on both individual and trap. 
+
+1. *s<sub>i</sub>:* a two-dimensional spatial coordinate which is the activity center of individual i. 
 
 ### References 
 
